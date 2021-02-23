@@ -122,7 +122,6 @@ namespace ID_Checker
             Random rnd = new Random();
             double RanDouble = rnd.NextDouble();
             double MaxNumber = 9999999999;
-
             double Result = MaxNumber - RanDouble * 1000000000;
             List<int> NumList = new List<int>(new int[10]);
             char[] Resultstring = new char[10];
