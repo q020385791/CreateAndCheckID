@@ -141,7 +141,10 @@ namespace ID_Checker
 
             //驗證
             //公式 [0]*1+[1]*8+[2]*7+[3]*6+[4]*5+[5]*4+[6]*3+[7]*2+[8]*1+[9]*1
-
+            if (NumList[1]!=1&& NumList[1]!=2)
+            {
+                return "";
+            }
             int Total = 0;//計算總和
             Total += NumList[0] * 1;
             Total += NumList[1] * 8;
