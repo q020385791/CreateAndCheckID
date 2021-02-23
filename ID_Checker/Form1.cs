@@ -104,8 +104,6 @@ namespace ID_Checker
                         Message = "此身分證不正確";
                         return false;
                     }
-
-
                 }
                 else 
                 {
@@ -118,7 +116,6 @@ namespace ID_Checker
                 Message = "請輸入身分證或產生隨機身分證";
                 return false;
             }
-            return true;
 
         }
         public string CreateID()
