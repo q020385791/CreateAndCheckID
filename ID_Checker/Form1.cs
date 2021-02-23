@@ -82,7 +82,6 @@ namespace ID_Checker
 
                     //驗證
                     //公式 [0]*1+[1]*8+[2]*7+[3]*6+[4]*5+[5]*4+[6]*3+[7]*2+[8]*1+[9]*1
-                    bool IfVaildID = false;
                     int Total = 0;//計算總和
                     Total += NumList[0] * 1;
                     Total += NumList[1] * 8;
@@ -96,7 +95,7 @@ namespace ID_Checker
                     Total += NumList[9] * 1;
                     if (Total%10==0)
                     {
-                        IfVaildID = true;
+                        
                         return true;
                     }
                     else
@@ -142,7 +141,7 @@ namespace ID_Checker
 
             //驗證
             //公式 [0]*1+[1]*8+[2]*7+[3]*6+[4]*5+[5]*4+[6]*3+[7]*2+[8]*1+[9]*1
-            bool IfVaildID = false;
+
             int Total = 0;//計算總和
             Total += NumList[0] * 1;
             Total += NumList[1] * 8;
@@ -156,9 +155,7 @@ namespace ID_Checker
             Total += NumList[9] * 1;
             if (Total % 10 == 0)
             {
-                IfVaildID = true;
                 Dictionary<int, string[]> DicEngToNum = lst_EngToNum();
-
                 var KeyPairNumToEng = DicEngToNum.Where(x => x.Key == NumList[0]).FirstOrDefault();
                 //取得數字量
                 int EngCount = KeyPairNumToEng.Value.Count();
